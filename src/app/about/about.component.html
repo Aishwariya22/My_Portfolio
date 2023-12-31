@@ -1,0 +1,47 @@
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="../../assets/about.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hi, I am Aishwariya Mazumdar. I am a front-end developer with 2 years of rich experience in
+                    CSS, HTML, and Typescript. I also have knowledge of Tailwind CSS.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links" [class.active-link]="activeTab === 'skills'" (click)="changeTab('skills')">
+                        Skills
+                    </p>
+                    <p class="tab-links" [class.active-link]="activeTab === 'experience'"
+                        (click)="changeTab('experience')">
+                        Experience
+                    </p>
+                    <p class="tab-links" [class.active-link]="activeTab === 'education'"
+                        (click)="changeTab('education')">
+                        Education
+                    </p>
+                </div>
+                <div class="tab-contents" [class.active-tab]="activeTab === 'skills'" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App development</span><br>Building Android/IOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" [class.active-tab]="activeTab === 'experience'" id="experience">
+                    <ul>
+                        <li><span>2021-2023</span><br>Tata Consultancy Services</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" [class.active-tab]="activeTab === 'education'" id="education">
+                    <ul>
+                        <li><span>12th Grade</span><br>Hem Sheela Model School</li>
+                        <li><span>Graduation</span><br>Techno India Saltlake</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

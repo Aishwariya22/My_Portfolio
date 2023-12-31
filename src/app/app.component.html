@@ -1,0 +1,29 @@
+<div id="header">
+  <div class="container">
+    <nav>
+      <!-- <img src="images/01.PNG" class="logo"> -->
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a> </li>
+        <li><a href="#about">About</a></li>
+        <!-- <li><a href="#">Services</a> </li> -->
+        <li><a href="#portfolio">Work</a> </li>
+        <li><a href="#contact">Contact</a> </li>
+        <i class="fas fa-times" (click)="closeMenu()"></i>
+      </ul>
+      <i class="fas fa-bars" (click)="onMenu()"></i>
+    </nav>
+    <div class="header-text">
+      <p>Front-end Developer</p>
+      <h1>Hi, I am <span>Aishwariya</span></h1>
+    </div>
+  </div>
+</div>
+<div id="about">
+  <app-about></app-about>
+</div>
+<div id="portfolio">
+  <app-portfolio></app-portfolio>
+</div>
+<div id="contact">
+  <app-contact></app-contact>
+</div>
