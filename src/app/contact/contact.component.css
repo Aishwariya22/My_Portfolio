@@ -10,6 +10,7 @@
 }
 .float-right{
     flex-basis: 60%;
+    padding-left: 15%;
 }
 .float-left p{
     margin-top: 30px;
@@ -67,6 +68,20 @@ form .btn2{
     margin-bottom: 30px;
     cursor: pointer;
 }
+.container .row{
+    display: flex;
+}
+@media (max-width: 768px) {
+    .container .row{
+        display: block;
+        width: 100%;
+    }
+    .float-right{
+        padding-top: 22%;
+        padding-left: 2%;
+        width: 100%;
+    }
+  }
 /* .copyright{
     width:100%;
     text-align: center;
