@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
   public submitForm() {
-    window.location.href = 'http://localhost:4200/#header';
+    const baseUrl = environment.baseUrl;
+    window.location.href = `${baseUrl}/#header`;
     alert('Response submitted successfully');
-    location.replace('http://localhost:4200');
+    location.replace(baseUrl);
   }
 }
