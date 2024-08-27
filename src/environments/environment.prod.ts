@@ -1,5 +1,5 @@
 export const environment = {
     production: true,
-    baseUrl: 'https://your-deployed-url.com',
+    baseUrl: 'https://master--slothbear.netlify.app',
   };
   
