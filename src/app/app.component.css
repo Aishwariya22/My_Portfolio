@@ -1,89 +1,126 @@
-#header{
+#header {
     width: 100%;
     height: 100vh;
     background-image: url(images/background2.png);
     background-size: cover;
     background-position: center;
 }
-.container{
+
+.container {
     padding: 10px 10%;
 }
-nav{
-    display:flex;
+
+nav {
+    display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
 }
+
 /* .logo{
     width: 140px;
 } */
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
-nav ul li a{
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
-nav ul li a::after{
-    content:'';
+
+nav ul li a::after {
+    content: '';
     width: 0%;
     height: 3px;
     background: #ff004f;
     position: absolute;
-    left:0;
+    left: 0;
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover:after{
+
+nav ul li a:hover:after {
     width: 100%;
 }
-.header-text{
+
+.header-text {
     margin-top: 20%;
     font-size: 30px;
 }
-.header-text h1{
+
+.header-text h1 {
     font-size: 60px;
     /* margin-top: 20px; */
 }
-.header-text h1 span{
+
+.header-text h1 span {
     color: #ff004f;
 }
+
+.mobile-image {
+    display: none;
+}
+
 .copyright-container {
     box-sizing: border-box;
     padding-right: 20px;
     padding-left: 20px;
     background-color: black;
     text-align: center;
-    position:absolute;
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 150px;
     color: white;
-  }
+}
+
 /*-------------------------css for small screens----------*/
-nav .fas{
+nav .fas {
     display: none;
 }
-@media only screen and (max-width: 600px){
-    #header{
-        background-image: url(images/background2.png);
+
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: none !important;
+        background-color: black;
+        height: 112vh;
     }
-    .header-text{
+    .descriptionContainer{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        width: 134px;
+        align-content: center;
+
+    }
+
+    .mobile-image {
+        display: flex;
+        width: 130%;
+        height: 100px;
+        border-radius: 61px;
+    }
+
+    .header-text {
         margin-top: 158%;
         font-size: 19px;
     }
-    .header-text h1{
+
+    .header-text h1 {
         font-size: 30px;
     }
-    nav .fas{
+
+    nav .fas {
         display: block;
         font-size: 25px;
     }
-    nav ul{
+
+    nav ul {
         background: #ff004f;
         position: fixed;
         top: 0;
@@ -94,11 +131,13 @@ nav .fas{
         z-index: 2;
         transition: right 0.5s ease-out;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin: 25px;
     }
-    nav ul .fas{
+
+    nav ul .fas {
         position: absolute;
         top: 25px;
         left: 25px;
