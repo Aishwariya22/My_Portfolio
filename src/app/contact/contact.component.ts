@@ -11,5 +11,6 @@ export class ContactComponent {
     window.location.href = `${baseUrl}/#header`;
     alert('Response submitted successfully');
     location.replace(baseUrl);
+    window.location.reload();
   }
 }
