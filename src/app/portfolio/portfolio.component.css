@@ -78,3 +78,14 @@
 .btn:hover{
     background: #ff004f;
 }
+@media (max-width: 768px) {
+    #portfolio {
+      padding: 60px 15px;
+    }
+    .sub-title {
+      font-size: 2rem;
+    }
+    .work-list {
+      grid-template-columns: 1fr;
+    }
+  }
